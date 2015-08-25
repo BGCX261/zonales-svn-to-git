@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <script type="text/javascript" src="resources/mootools.js"></script>
+        <script type="text/javascript">
+            function writeText(txt,comp)
+            {
+                document.getElementById(comp).innerHTML=txt;
+            }
+
+            function verReserva(mesa) {
+                var rValue;
+                window.addEvent('domready', function() {
+                    var app = document.getElementById("JavaFXJavaScript");
+                    
+                    var req = new Request.HTML({url:'transport.php?action=' +
+                            escape('http://localhost:8080/pruebasJava/Main')+
+                            '&method=post'+"&mesa="+mesa,
+                        onSuccess: function(html) {
+                            app.script.showMessage(html.item(0).innerHTML);
+                        },
+                        onFailure: function() {
+                            app.script.showMessage("Falló el requerimiento.");
+                        }
+                    });
+
+                    req.send();
+
+                });
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>ReservasJavaFX</h1>
+                <script src="http://dl.javafx.com/1.2/dtfx.js"></script>
+        <script>
+            javafx(
+            {
+                archive: "./reservas/ReservasJavaFX.jar",
+                draggable: true,
+                width: 540,
+                height: 540,
+                code: "reservasjavafx.Main",
+                name: "ReservasJavaFX",
+                id: 'JavaFXJavaScript'
+            }
+        );
+        </script>
+                <!--
+        <script type="text/javascript" src="resources/wz_tooltip.js"></script>
+        <img src ="restaurante2.jpg" width ="600" height ="480" alt="Planets" usemap="#planetmap" onMouseMove="writeText('Coords: X=' + event.clientX + ' - Y='+event.clientY, 'coords')"/>
+
+        <map name="planetmap">
+            <area shape ="rect" coords ="0,230,125,300"
+                  onMouseOver="verReserva('1')"
+                  onMouseOut="UnTip()"
+                  onClick="alert('Reserva Mesa 1');"
+                  style="cursor: pointer; color:#FFFFFF"
+                  />
+
+
+            <area shape ="rect" coords ="313,198,526,280"
+                  onMouseOver="verReserva('2')"
+                  onMouseOut="UnTip()"
+                  onClick="alert('Reserva Mesa 2');"
+                  style="cursor: pointer;"
+                  />
+        </map>
+        <div style="opacity:0.2;">
+            <p id="desc">Hola</p>
+            <p id="coords"></p>
+        </div>-->
+
+    </body>
+</html>
+
+
+
+

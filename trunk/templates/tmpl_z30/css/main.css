@@ -1,0 +1,337 @@
+@charset "utf-8";
+/* CSS main */
+
+body{
+    background:url(../img/bg-line-top.gif);
+    background-repeat:repeat-x;
+}
+
+.clear{
+    clear:both;
+}
+
+.hidden {
+    display: none;
+}
+
+.loading{
+    background-image: url('/templates/z30/img/loading.gif'); 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-color: white;
+    background-size: auto auto;
+}
+
+#top_bar{
+    margin:auto;
+    width:999px;
+    height:62px;
+    background:url(../img/top_bar.jpg);
+}
+
+#top_bar_left{
+    float:left;
+    width:140px;
+    padding:8px 0 0 40px;
+}
+
+#top_bar_right {
+    float: left;
+    margin-left: 80px;
+    padding: 14px 0 0;
+}
+
+#top_bar_right span{
+    font-size:0;
+}
+
+#top_bar_right span img{
+    vertical-align:top;
+    margin:0;
+    padding:0;
+    /*height: 31px;*/
+    cursor: pointer;
+}
+
+#mainMenu{
+    background:#e2e1e1;
+}
+
+#ordenar{
+    border-bottom:1px solid #CCC;
+    margin:0 0 30px 0;
+}
+
+#verNuevos{
+    font-family: 'PT Sans Narrow',sans-serif;
+    background-color: #E2E1E1;
+    color: #009CC9;
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.border1{
+    padding-top:0;
+    border:1px #CCC solid;
+    border-top:0;
+    border-bottom:0;
+}
+
+.padding10{
+    padding:10px;
+}
+
+
+#content{
+    margin:auto;
+    width:932px;
+    background:url(../img/bg-line-ccc.gif);
+    background-repeat:repeat-y;
+    background-position:530px;
+}
+
+#content-only {
+    margin:auto;
+    width:932px;    
+    background-repeat:repeat-y;
+    background-position:530px;
+    background: none repeat scroll 0 0 #CED8F6;
+}
+
+#content-left{
+    float:left;
+    width:530px;
+}
+
+#content-left .col1,
+#content-left .col2,
+#content-left .col3{
+    float:left;
+}
+
+#content-left .col1{
+    width:50px;
+}
+
+#content-left .col2{
+    width:420px;
+}
+
+#content-left .col2 .padding10{
+    padding:0 10px 0 10px;
+}
+
+#content-left .col2{}
+
+#content-left .col2 .padding10 .comentarios{
+    margin-top:15px;
+    display:block;
+    background:#e9eaea;
+    padding:10px;
+    float: left;
+    width: 380px
+}
+
+
+
+#content-left .col3{
+    width:40px;
+}
+
+#content-right{
+    float:right;
+    width:400px;
+}
+
+#footer{
+    background:url(../img/bg-footer.jpg);
+    height:82px;
+    width:100%;
+}
+
+#footer .padding10{
+    width:960px;
+    margin:auto;
+    padding:34px 0 0 0;
+}
+
+#verMas{
+    display:block;
+    background:#e2e1e1;
+    margin:0 0 20px 0;
+    padding:10px;
+}
+
+/* POPULATE OPTIONS */
+div.suggestions {    
+    /*    background: none repeat scroll 0% 0% #009ECD;
+        border-style: groove;
+        border-width: 0px 2px 2px 2px;
+        border-radius: 0px 0px 5px 5px;
+        color: white;
+        font-weight: bold;
+        padding: 5px;
+        position: absolute;
+        z-index: 999;
+        opacity: 0.95;  */
+    background: none repeat scroll 0 0 #009ECD;
+    border-radius: 0 0 5px 5px;
+    color: #FFF;
+    padding: 5px;
+    position: absolute;
+    z-index: 999;
+}
+
+div.suggestions p {        
+    border-radius: 2px 2px 2px 2px;
+    padding: 3px;
+    color: white;    
+    cursor: pointer;
+}
+
+#top_bar_right div.suggestions p {
+    font-size: 15px;
+}
+
+div.suggestions p.selected  {
+    background: none repeat scroll 0% 0% #78E0FF;
+    position: relative;
+    color: white;    
+}
+/* FIN POPULATE OPTIONS */
+
+/* MENU EDITOR */
+div#content-right ul.menuEditor {
+    font-family: 'PT Sans Narrow',sans-serif;
+    float: right;
+    width: 40%;
+}
+
+div#content-right ul.menuEditor li {
+    background: none repeat scroll 0 0 #009CC9;
+    padding: 5px;
+}
+
+div#content-right ul.menuEditor li:hover {
+    background: #78E0FF;    
+}
+
+div#content-right ul.menuEditor li a {
+    color: white;
+    font-weight: bold;    
+    text-decoration: none;
+}
+/* FIN MENU EDITOR */
+
+/* EDITOR ZONALES */
+div#table_content table.advanced_search tbody tr td.input input {
+    border: 1px groove;
+    border-color: #CECEF6;
+    margin: 10px;
+    width: 80%;
+}
+
+html body div#content-only div.border1 div.padding10 h1.samples{
+    font-family: 'PT Sans Narrow',sans-serif;
+    text-align: center;
+    background: none repeat scroll 0 0 #009CC9;
+    padding: 6px;
+    font-size: 20px;
+    color: white;
+}
+
+div#table_content table.advanced_search tbody tr td.label label{
+    font-family: 'PT Sans Narrow',sans-serif;
+}
+
+div#content-only div.border1 div.padding10 form div#buttons input{
+    border: none;
+    font-size: 12px;
+    color: inherit;
+    font-family: 'PT Sans Narrow',sans-serif;
+    background: none repeat scroll 0 0 #E2E1E1;
+}
+/* FIN EDITOR ZONALES */
+/*LISTA NOTICIAS ZONALES*/
+html body div#content-only div.border1 div.padding10 div#wrapper.clearfix div#resultado table#resultTable.resultTable tr.tableRowHeader{
+    font-family: 'PT Sans Narrow',sans-serif;
+    text-align: center;
+    background: none repeat scroll 0 0 #009CC9;
+    padding: 6px;
+    font-size: 20px;
+    color: white;
+}
+html body div#content-only div.border1 div.padding10 div#wrapper.clearfix div#resultado{
+    font-size: 15px;
+    font-family: 'PT Sans Narrow',sans-serif;
+}
+/*FIN LISTA*/
+
+/* MAPA */
+div#mapDiv {
+    padding: 10px;
+}
+
+div#mapDiv label {
+    color: #009CC9;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+div#mapDiv spam {
+    color: #009CC9;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+div#mapDiv a {
+    color: #009CC9;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+}
+
+#breadCrumbDiv {
+    background: #e2e1e1;
+}
+
+#breadCrumbDiv p {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+path:hover {
+    opacity: .1;
+    fill: #88AF05;
+}
+/* FIN MAPA */
+div#tituloZone{
+    font-family: 'PT Sans Narrow',sans-serif;
+    text-align: center;        
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: #313131;
+
+}
+.loading {
+    background-image: url('../img/loading.gif');
+    background-repeat: no-repeat;
+}
+
+{font-family: 'Open Sans', sans-serif;}
+{font-family: 'PT Sans Narrow', sans-serif;}
+{font-family: 'PT Sans', sans-serif;}
+{font-family: 'Open Sans Condensed', sans-serif;}

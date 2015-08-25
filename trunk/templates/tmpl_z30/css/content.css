@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* CSS content */
+
+*{}
+
+#zoneExtended{
+    width:330px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:17px;
+    border: 0px;    
+    margin: 0px;
+    padding:4px;
+    color:#313131;
+}
+
+#content hr{
+    border:0;
+    border-top:1px solid #CCC;
+    margin:20px 0 24px 0;
+}
+
+h2{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:18px;
+    color:#009cc9;
+    word-wrap: break-word;
+}
+
+p{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:14px;
+    color:#313131;
+    cursor: default;
+    word-wrap: break-word;
+}
+
+p.actions {
+    word-wrap: normal;
+}
+
+a{
+    cursor: pointer;
+    word-wrap: break-word;
+}
+
+.col1 p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:13px;
+    margin-bottom:8px;
+    color:#009cc9;
+}
+
+p.images{
+    margin:10px 0 12px 0;
+    background:#e2e1e1;
+}
+
+p.cuerpo{
+    margin-top:5px;
+    line-height:18px;
+}
+
+p.autor{
+    margin-top:10px;
+    font-family: 'PT Sans', sans-serif;
+    font-size:11px;
+    color:#799a0a;
+}
+
+p.fecha{
+    margin-top:5px;
+    font-family: 'PT Sans', sans-serif;
+    font-size:11px;
+    color:#b4b4b4;
+}
+
+p.buttons{
+    margin:10px 0 0 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size:11px;
+    color:#b4b4b4;
+}
+
+p.buttons a{
+    color:#009cc9;
+    text-decoration:none;
+}
+
+.comentarios p.comentario{
+    color:#565757;
+    line-height:17px;
+}
+
+.comentarios p.comentario a{
+    color:#799a0a;
+    text-decoration:none;
+}
+
+.comentarios hr{
+    margin:10px 0 8px 0 !important;
+}
+
+.comentarios p .input_comment{
+    width:100%;
+    border:0;
+    padding:2px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color:#666;
+}
+
+.contador{
+    background:#e2e1e1;
+}
+
+.contador p{
+    text-align:center;
+    padding:2px;
+}
+
+#footer .padding10 p{
+    color:#8bd6ec;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:14px;
+    line-height:18px;
+}
+
+#footer .padding10 p a{
+    color:inherit;
+    text-decoration:none;
+}
+
+/* SELECTOR DE TEMPORALIDAD */
+span#tempoSelect.suggestions {    
+    background: none repeat scroll 0 0 #009ECD;
+    border-radius: 5px;
+    color: #FFF;
+    padding: 5px;
+    position: absolute;
+    z-index: 999;
+    border-color: #006F91;
+    border-width: 1px;
+    border-style: solid;
+}
+
+span#tempoSelect.suggestions p {
+    width: auto;
+    background-color: #009ECD;
+    cursor: pointer;
+    color: white;
+    margin: auto;
+    text-align: left;
+}
+
+span#tempoSelect.suggestions p:hover{
+    background-color: #78E0FF;
+}
+
+span#tempoSelect.suggestions p.selected {    
+    background-color: #78E0FF;
+}
+/* FIN SELECTOR DE TEMPORALIDAD */
+
+/* ORDEN */
+#ordenar p{
+    text-align:center;
+    margin:auto;
+    margin-bottom:-5px;
+    background:#FFF;
+    width:400px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color:#999;
+    font-size:12px;
+    text-transform:uppercase;
+}
+
+#ordenar p img{
+    padding-bottom:2px;
+    margin:0 5px 0 2px;
+}
+
+#ordenar img.down{
+    cursor: pointer;
+}
+
+#ordenar p a{
+    text-decoration:none;
+    color:#009cc9;
+    cursor: pointer;
+    padding: 0px 5px;
+}
+
+#ordenar p a.active{
+    background: none repeat scroll 0 0 #009CC9;
+    color: #FFFFFF;
+    padding: 0px 5px;
+}
+/* FIN ORDEN */
+
+#mainMenu p{
+    text-align:center;
+    padding:10px;
+    margin-bottom:20px;
+}
+
+#mainMenu p a{
+    color:inherit;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+#mainMenu p a.active{
+    background:#009cc9;
+    padding:0 5px 0 5px;
+    color:#FFF;    
+}
+
+#nuevos_post p{
+    text-align:center;
+    text-transform:uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:17px;
+    color:#009cc9;
+}
+
+#nuevos_post p a{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+}
+
+#nuevos_post p a img{
+    padding:0 0 3px 4px;
+}
+
+#verMas p{
+    text-align:center;
+    text-transform:uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:17px;
+    color:#009cc9;
+}
+
+#verMas p a{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+    cursor: pointer;
+}
+
+#verMas p a img{
+    padding:0 0 3px 4px;
+}
+
+#moduletable_zlogin{
+
+}
+
+#login-form {
+    float: right;
+    margin-right: 40px;
+    margin-top: 15px;
+    /*width: 260px;    */
+}
+
+#login-form input {
+    border: none;
+    cursor: pointer;
+}
+
+#modlgn-username {
+    font-size: 12px;
+    font-family: 'PT Sans Narrow',sans-serif;
+}
+#modlgn-passwd {    
+    font-size: 12px;
+    font-family: 'PT Sans Narrow',sans-serif;
+
+}
+#formzlogin_submit, #registeruser{
+    font-size: 12px;
+    color: inherit;
+    font-family: 'PT Sans Narrow',sans-serif;
+    background: none repeat scroll 0 0 #E2E1E1;
+    width:49px;
+    height:22px;
+}
+
+#form-login-username {
+    float: left;
+    margin-right: 10px;
+}
+
+#form-login-password {
+    float: left;
+    margin-right: 10px;
+}
+#login-buttons{
+    margin-left: 250px;
+    margin-top: -34px;
+}
+#login-buttons p{
+    padding: 1px;
+}
+#login-form a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 10px;
+}
+#idlogin-greeting{
+    font-size: 14px;
+    color: white;
+    font-family: 'PT Sans Narrow',sans-serif;
+    text-decoration: none;
+    margin: 2px;
+
+}
+#idlogout-button a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+}
+#submit-logout{
+    font-size: 12px;
+    color: inherit;
+    font-family: 'PT Sans Narrow',sans-serif;
+    background: none repeat scroll 0 0 #E2E1E1;
+
+}
+
+div.post div.col2 div.padding10 h2 a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+div.post div.col2 div.padding10 p.cuerpo a.textLink {
+    text-decoration: underline;
+    color: inherit;
+    cursor: pointer;
+}
+
+#postTemplate a:visited {
+    color: inherit;
+}
+#verMasPost {
+    cursor: pointer;
+}
+
+#resetZoneButton {
+    cursor: pointer;
+}
+
+.newPost {
+    background-color: #EFF8FB;
+}
+
+div.contador p img {
+    cursor: pointer;
+}
+
+.avatar {
+    width: 50px;
+}
+
+img.img {
+    margin:10px 10px 12px 0px;
+    background:#e2e1e1;
+    float: left;
+    width: 100px;
+    display: inline;
+    overflow: hidden;
+    position: relative;
+}
+
+div.verMasComentarios p.comentario a {
+    color:#799a0a;
+}

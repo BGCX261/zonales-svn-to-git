@@ -1,0 +1,1 @@
+extraer para la localidad "Puerto Madryn" asignando los tags "Deportes" mediante la fuente facebook a partir del usuario "El Madryn" y del usuario "Deportivo Madryn" y del usuario "Brown de Puerto Madryn" y filtrando por con al menos 1 actions.

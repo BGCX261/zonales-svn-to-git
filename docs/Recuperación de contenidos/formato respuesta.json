@@ -1,0 +1,38 @@
+[
+	{
+		"source":
+		"id":
+		"from": {
+			"id":
+			"category":
+			"name":
+			"url":
+		}
+		"to": [
+			{
+				"id":
+				"category":
+				"name":
+				"url":
+			}
+		]
+		"title":
+		"text":
+		"links": [
+			{
+				"type": (video, picture, link, event, etc)
+				"url":
+			}
+		]
+		"actions": [
+			{
+				"type": (comment, retweet, like, share, favorite, etc.)
+				"cant":
+			}.
+		]
+		"created":
+		"modified":
+		"relevance":
+	}
+]
+				

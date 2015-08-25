@@ -1,0 +1,66 @@
+#summary One-sentence summary of this page.
+
+= Introducción =
+----
+
+Descripción de los servicios de persistencia de gramáticas de extracción, con sus respectivos parámetros.
+
+
+= Servicios para persistencia de extracciones =
+
+<br>
+----
+== GetZGram ==
+----
+
+*_URI_*: /getZGram <br>
+*_Respuesta_*: Extracción solicitada <br>
+*_Formato_*: JSON <br>
+*_Observaciones_*: Deben especificarse alguno de los parámetros o ambos.
+
+=== Parámetros ===
+
+|| *Parámetro* || *Requerido* || *Descripción* || *Posibles valores* || *Observaciones* ||
+|| id || No || Id de la extracción a recuperar / all / allNames || Cualquier cadena || Si se especifica "all" como name trae todas las extracciones, "AllNames" trae solamente los datos básicos de la extracción ||
+|| filtros || No || Filtros para recuperar extracciones || JSON de filtros ||  ||
+
+*_Ejemplo_*: 
+
+<br>
+----
+== SetZGram ==
+----
+
+*_URI_*: /setZGram <br>
+*_Respuesta_*: success / error <br>
+*_Formato_*: JSON
+
+=== Parámetros ===
+
+|| *Parámetro* || *Requerido* || *Descripción* || *Posibles valores* || *Observaciones* ||
+|| cod || Si || Código de respuesta del parser || Códigos de ZMessage || ||
+|| msg || No || Mensaje de respuesta del parser || Cualquier cadena || ||
+|| metadata || Si || Metadata obtenida como respuesta del parser || Formato ZCrawling || ||
+|| verbatim || Si || Texto original de la consulta || Consulta de extracción ||   ||
+
+*_Ejemplo_*: 
+
+<br>
+----
+== UpdateZGram ==
+----
+
+URI: /updateZGram <br>
+*_Respuesta_*: success / error <br>
+*_Formato_*: JSON
+
+=== Parámetros ===
+
+|| *Parámetro* || *Requerido* || *Descripción* || *Posibles valores* || *Observaciones* ||
+|| id || Si || Id de la extracción a actualizar || Cualquier cadena || ||
+|| newcod || No || Nuevo código de respuesta del parser || Códigos de ZMessage || ||
+|| newmsg || No || Nuevo mensaje de respuesta del parser || Cualquier cadena || ||
+|| newmetadata || No || Nueva metadata obtenida como respuesta del parser || Formato ZCrawling || ||
+|| newverbatim || no || Nuevo texto de la consulta || Consulta de extracción ||   ||
+
+*_Ejemplo_*: 
